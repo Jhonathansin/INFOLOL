@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav:hover {
+    transform:translateX(-3px)
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 40vh;
+}
+
+main .imagemCampeao {
+    width: 100%;
+    /* height: 100%; */
+    height: calc(40vh - 50px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.9);
+}
+
+main .imagemCampeao .anterior {
+    width: 50px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main .imagemCampeao .anterior:hover {
+    background-color: rgba(255,255,255,0.2)
+}
+
+main .imagemCampeao .proximo {
+    width: 50px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main .imagemCampeao .proximo:hover {
+    background-color: rgba(255,255,255,0.2)
+}
+
+main .nome {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .container {
+    display: grid;
+    background-image: url(bgCampeao2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+main .container h3 {
+    font-size: 25px;
+}
+
+main .container p {
+    font-size: 18px;
+}
+
+#info {
+    width: 60%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.4);
+    justify-self: center;
+}
+
+#info p {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: lightblue;
+    margin: 2px;
+}
+
+#lore {
+    grid-row: 1 / span 1;
+    width: 60%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.4);
+    justify-self: center;
+}
+
+#stats {
+    width: 60%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.4);
+    justify-self: center;
+}
+
+#stats p {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: yellow;
+    margin: 2px;
+}
+
+#spells {
+    width: 60%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.4);
+    justify-self: center;
+}
+
+#spellsContainer {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.spellContainer {
+    width: 120px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-break: break-word;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 5px;
+}
+
+.spellContainer:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.spellSelected {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.spellImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+#description {
+    margin-top: 15px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 725px) {
+    main .container {
+        display: grid;
+        text-align: justify;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #lore {
+        grid-row: 1 / span 1;
+        justify-self: center;
+        width: 100%;
+    }
+
+    #info {
+        width: 100%;
+        justify-self: center;
+    }
+
+    #stats {
+        width: 100%;
+        justify-self: center;
+    }
+
+    #spells {
+        width: 100%;
+        justify-self: center;
+    }
+}

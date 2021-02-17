@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Robot;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-image: url(bgItem.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav:hover {
+    transform:translateX(-3px)
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main {
+    margin-top: 50px;
+    border: 1px solid transparent;
+    width: 80%;
+    height: 40vh;
+    margin: 50px auto;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(50,50,50,0.8);
+    color: rgb(200,200,200)
+}
+
+.nome h2 {
+    margin-bottom: 10px;
+}
+
+.imageItem {
+    width: 64px;
+    height: 64px;
+}
+
+.stats {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.receita {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.receita > div {
+    display: flex;
+}
+
+.receita > div p:first-child {
+    margin-right: 15px;
+}
+
+.descricao {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.constroi {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.constroiContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemContainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+    margin: 4px 4px 0 0;
+    padding: 4px;
+}
+
+.itemContainer:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(220,220,220);
+}
+
+.itemContainer div {
+    width: 64px;
+    height: 64px;
+}
+
+.receitaItem {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.receitaitemContainer {
+    display: flex;
+    flex-wrap: wrap;
+}

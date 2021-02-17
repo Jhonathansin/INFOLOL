@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main nav {
+    margin-top: 100px;
+}
+
+main nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main nav ul a {
+    width: 100%;
+    list-style-type: none;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 0 4px black;
+    filter: grayscale(0);
+}
+
+#campeoes {
+    background-image: url(campeoes.jpg);
+    background-position: center;
+    filter: grayscale(1);
+}
+
+#campeoes:hover {
+    filter: none;
+}
+
+#items {
+    background-image: url(items.jpg);
+    background-position: center;
+    filter: grayscale(1);
+}
+
+#items:hover {
+    filter: none;
+}
+
+#spells {
+    background-image: url(magias.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#spells:hover {
+    filter: none;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+}
+
+footer nav {
+    height: 100%;
+}
+
+footer nav ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+footer nav ul li {
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer nav ul li:hover {
+    transform: translateY(-3px);
+}
